@@ -46,7 +46,7 @@ body {
 
 /* Hero */
 .contenedor {
-  max-width: 1200px;
+  max-width: 9000px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -113,8 +113,12 @@ body {
   color: white;
 }
 
+.card-link:hover {
+  color: white;
+}
+
 /* Responsive Hero */
-@media (max-width:480px) {
+@media (max-width:780px) {
   .btn-pill {
     padding: 10px 18px;
   }
@@ -138,6 +142,15 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+}
+
+.blanco_contenedor{
+  background-color: white;
+}
+
+.blanco{
+  background-color: #fcfcfc;
+  border-color:#16a34a;
 }
 
 .text_proyectos {
@@ -188,13 +201,16 @@ body {
 
 .card{
   flex: 1 1 45%;
-  background-color: #1a1a1a;
   border-radius: 30px;
-  border: 0;
+  border: 5 solid;
   overflow: hidden;
   padding: 30px;
   box-sizing: border-box;
+}
+
+.negro{
   color: #fff;
+  background-color: #1a1a1a;
 }
 
 .card .card-subtitle { 
@@ -230,7 +246,6 @@ body {
 .card-link:hover {
   background: #13cb57;
   border-color: #13cb57;
-  color: w;
 }
 
 
