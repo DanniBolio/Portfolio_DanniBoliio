@@ -64,7 +64,7 @@ main {
 
 .brand-logo-db {
   height: 65px;
-  width: 10px;
+  width: auto;
 }
 
 .navbar .navbar-collapse {
