@@ -7,7 +7,8 @@
     <title>Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/styless.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,7 +41,7 @@
     </header>
     <main>
         <section class="contacto">
-            <div class="proyectos__inner">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="proyectos__inner">
                 <div class="text_proyectos">
                     <p class="sub-title">Listo</p>
                     <h2 class="proyectos__title blackP">Un poco sobre mi</h2>
@@ -48,14 +49,14 @@
             </div>
             <div class="contacto_contenido">
                 <!-- Banner información -->
-                <div class="contacto_info">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1900" class="contacto_info">
                     <img src="../IMG/Banner.jpg" alt="Foto de Daniel" class="contacto_foto">
                     <p class="contacto_correo"><b>danibolio@gmail.com</b></p>
                     <p>Soy Daniel Bolio, diseñador web apasionado por crear experiencias visuales limpias al igual que
                         funcionales y en proceso de ser un desarrollador Web</p>
                 </div>
                 <!-- Formulario Texto -->
-                <div class="contacto_texto">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1900" class="contacto_texto">
                     <p>Soy diseñador UX/UI que cree en productos simples, rápidos y bonitos. Diseño con intención: cada
                         color, espaciado y microinteracción tiene un “por qué”.</p>
                     <p>Mi proceso mezcla research ágil, wireframes, prototipos interactivos y diseño de sistemas.
@@ -63,7 +64,7 @@
                         sorpresas. ¿Meta? Menos clics innecesarios, más tareas completadas y una interfaz que se sienta
                         natural desde el primer uso.</p>
                     <p><br></p>
-                    <div class="contenedor_form boxg">
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500" class="contenedor_form boxg">
                         <p><b>¿Tienes un proyecto en mente? ¡Platiquemos!</b></p>
                         <!-- Formulario -->
                         <form>
@@ -105,6 +106,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+  AOS.init();
+</script>
+
 </body>
 
 </html>

@@ -1,0 +1,41 @@
+@use 'variables' as *;
+
+.hero {
+  max-width: $container-max;
+  margin-inline: auto;
+  color: $white;
+  padding: 50px 0;
+  text-align: center;
+
+  .contenedor {
+    text-align: left !important;
+  }
+
+  .card_me {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    gap: 12px;
+    flex: 0 0 auto;
+  }
+
+  .hero-titulo {
+    margin: 0 0 28px;
+    font-weight: 700;
+    line-height: 1.05;
+    font-size: 5.3vh;
+    text-align: left;
+
+    .nombre {
+      color: $color-primary;
+      font-weight: 600;
+    }
+    @media (max-width: $bp) {
+      font-size: 4.3vh;
+    }
+  }
+
+  @media (max-width: $bp) {
+    margin: 0 20px;
+  }
+}

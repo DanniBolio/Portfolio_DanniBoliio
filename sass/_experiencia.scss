@@ -1,0 +1,81 @@
+@use 'variables' as *;
+
+.experiencia {
+  max-width: $container-max;
+  margin-inline: auto;
+  color: $white;
+  padding: 0 0 50px;
+  text-align: center;
+
+  .text_exp {
+    text-align: left;
+  }
+
+  .contenedor {
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(16px, 4vw, 52px);
+    padding: clamp(24px, 5vw, 64px);
+    @media (max-width: $bp-sm) {
+      border-radius: 35px;
+    }
+  }
+
+  .backct {
+    background: $color-text;
+    color: $white;
+  }
+
+  .titulo-exp {
+    margin: 0 0 30px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    font-size: 2vh;
+  }
+
+  .lista-exp {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .exp-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 18px 0;
+    border-bottom: 1px solid $gray;
+
+    .exp-puesto {
+      margin: 0 0 4px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .exp-empresa {
+      margin: 0;
+      text-align: start;
+      color: $gray;
+    }
+    .exp-periodo {
+      color: $gray;
+      white-space: nowrap;
+    }
+  }
+
+  @media (max-width: $bp-sm) {
+    .titulo-exp {
+      font-size: 28px;
+    }
+    .exp-item {
+      flex-direction: column;
+      gap: 6px;
+    }
+    .exp-periodo {
+      align-self: flex-start;
+    }
+    margin: 0 20px;
+  }
+}

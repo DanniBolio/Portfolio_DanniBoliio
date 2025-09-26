@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+main {
+    padding: 0 20px;
+}
+
+.contenedor {
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(16px, 4vw, 52px);
+    padding: 100px 60px;
+
+    @media (max-width: $bp) {
+        padding: 50px 30px !important;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 35px;
+    }
+}
+
+.blackcontenedor {
+    background: $color-text;
+    color: $white;
+}
+
+.contacto_foto {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,108 @@
+@use 'variables' as *;
+
+.proyectos {
+  max-width: $container-max;
+  margin-inline: auto;
+  padding: 100px 100px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 50px;
+
+  &__inner {
+    max-width: $container-max;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .text_proyectos {
+    text-align: left;
+  }
+  &__title {
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    font-size: 2vh;
+  }
+  .sub-title {
+    color: $color-primary-dark;
+    font-size: 1.5vh;
+  }
+
+  @media (max-width: $bp-md) {
+    &__inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .sub-title {
+      font-size: 1.5vh;
+    }
+    margin: 0 20px;
+  }
+  @media (max-width: $bp) {
+    padding: 50px 30px !important;
+    border-radius: 35px;
+  }
+}
+
+.proyectos_boxc {
+  max-width: $container-max;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 45%;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 30px;
+  box-sizing: border-box;
+
+  &.negro {
+    color: $white;
+    background-color: $color-text;
+  }
+  .card-subtitle {
+    color: $gray !important;
+    margin-top: 5px;
+  }
+  .card-body {
+    text-align: start;
+  }
+  img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+  }
+}
+
+.card-link {
+  background: transparent;
+  border-color: $color-primary-dark;
+  color: $color-primary-dark;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 24px;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.2vh;
+  border: 2px solid;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease,
+    transform 0.15s ease;
+  margin-top: 10px;
+
+  &:hover {
+    background: $color-primary;
+    border-color: $color-primary;
+    color: $color-text;
+  }
+}

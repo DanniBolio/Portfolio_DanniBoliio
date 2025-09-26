@@ -1,0 +1,24 @@
+@use 'variables' as *;
+
+.about_me {
+  max-width: $container-max;
+  margin-inline: auto;
+  text-align: left;
+
+  .contacto_foto {
+    margin-top: 50px;
+    width: 328px;
+    height: 328px;
+  }
+  .contenedor > div {
+    flex: 1 1 50%;
+    min-width: 0;
+  }
+
+  @media (max-width: $bp) {
+    .contenedor > div {
+      flex-basis: 100%;
+    }
+    margin: 0 20px;
+  }
+}

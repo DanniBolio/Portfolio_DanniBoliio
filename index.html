@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio Daniel</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/styless.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -15,38 +20,42 @@
         <!-- Menú de navegación -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <img src="../IMG/Logo.webp" alt="Logo de agencia" class="brand-logo-db">
+                <a class="navbar-brand" href="/">
+                    <img src="../IMG/Logo.webp" alt="Logo de Daniel Bolio" class="brand-logo-db" width="130"
+                        height="65">
+                </a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="nav justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="PAGES/proyectos.html">Mis proyectos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/PAGES/sobrenosotros.html">Sobre mi y Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="nav justify-content-center ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PAGES/proyectos.html">Mis proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PAGES/sobrenosotros.html">Sobre mi y Contacto</a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
         </nav>
     </header>
+
     <main>
         <!-- Hero -->
-        <section class="hero">
+        <section data-aos="zoom-out-up" data-aos-duration="700"class="hero">
             <div class="contenedor text-center blackcontenedor">
                 <div class="card_me">
-                    <img src="../IMG/Banner.jpg" alt="Foto de Daniel" class="contacto_foto">
+                    <img src="../IMG/Banner.jpg" alt="Foto Avatar" class="contacto_foto" width="80" height="80"
+                        decoding="async">
                     <div class="info_card">
-                        <h3>Daniel Bolio</h3>
-                        <p>Diseñador UX UI, Desarrollador</p>
+                        <h3><b>Daniel Bolio</b></h3>
+                        <p>Diseñador UX UI, Desarrollador Web</p>
                     </div>
                 </div>
                 <div>
@@ -56,26 +65,46 @@
                     <p>Diseñador autodidacta, motivado por los retos y comprometido con la creación de soluciones
                         innovadoras.</p>
                     <div class="btn-hero">
-                        <a href="/PAGES/sobrenosotros.html" class="btn-pill btn-green"><span>Hablemos</span>
+                        <a href="PAGES/sobrenosotros.html" class="btn-pill btn-green">
+                            <span>Hablemos</span>
                             <span class="btn-cta__icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" width="16" height="16">
+                                <svg viewBox="0 0 24 24" width="16" height="16" role="img" aria-label="Ir">
                                     <path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                            </span></a>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-        <Section class="about_me">
-            <div class="contened">
-                <Div>
-                    <h2>Sobre mí</h2>
-                </Div>
+
+        <!-- Sobre mí -->
+        <section class="about_me">
+            <div class="contenedor">
+                <div data-aos="zoom-in-up" data-aos-duration="700">
+                    <p class="sub-title">¿Quien soy?</p>
+                    <h2 class="proyectos__title">Un poco sobre mí</h2>
+                    <img src="../IMG/Banner.jpg" alt="Foto avatar" class="contacto_foto" width="500" height="500"
+                        decoding="async">
+                </div>
+                <div data-aos="zoom-in-up" data-aos-duration="700">
+                    <p>
+                        Hola, soy <b>Daniel Bolio</b>. Soy diseñador digital especializado en UX/UI. Me enfoco en
+                        transformar necesidades de negocio y de usuario en interfaces claras, accesibles y consistentes.
+                        Trabajo de principio a fin: investigación puntual, arquitectura de información, wireframes,
+                        prototipos de alta fidelidad y diseño de sistemas que escalan con el producto.
+                        <br><br>
+                        Mi prioridad es la usabilidad y la coherencia visual: reduzco fricción, cuido la jerarquía
+                        tipográfica y defino patrones reutilizables para acelerar desarrollo. Colaboro estrechamente con
+                        equipos técnicos y de negocio, mido resultados y itero con base en datos, no suposiciones.
+                    </p>
+                </div>
             </div>
-        </Section>
+        </section>
+
         <!-- Proyectos -->
-        <section class="proyectos contenedor">
+        <section data-aos="zoom-out-up" data-aos-duration="1200" class="proyectos blackcontenedor">
             <div class="proyectos__inner">
                 <div class="text_proyectos">
                     <p class="sub-title">Proyectos</p>
@@ -84,48 +113,55 @@
 
                 <a href="PAGES/proyectos.html" class="btn-pill btn-lime">Ver más proyectos</a>
             </div>
+
             <div class="proyectos_boxc">
                 <!-- Proyecto 01 -->
-                <div class="card negro" style="width: 18rem;">
+                <div class="card negro" style="width: 18rem;" role="listitem">
                     <div class="card-body">
                         <h5 class="card-title"><b>Contenido Digital</b></h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">Diseño Digital</h6>
                         <a href="#" class="card-link">Ver más</a>
                     </div>
-                    <img src="IMG/Diseño Digital.jpg" alt="Proyectos diseños">
+                    <img src="IMG/Diseño Digital.jpg" alt="Proyecto de contenido digital" loading="lazy"
+                        decoding="async">
                 </div>
+
                 <!-- Proyecto 02 -->
-                <div class="card negro" style="width: 18rem;">
+                <div class="card negro" style="width: 18rem;" role="listitem">
                     <div class="card-body">
-                        <h5 class="card-title"><b>Social media</b></b></h5>
+                        <h5 class="card-title"><b>Social media</b></h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">Diseño Digital</h6>
-                        <a href="#" class="card-link">Ver más</a>
+                        <a href="PAGES/proyecto_socialmedia.html" class="card-link">Ver más</a>
                     </div>
-                    <img src="IMG/Social_media.jpg" alt="Proyectos social Social_media">
+                    <img src="IMG/Social_media.jpg" alt="Proyecto de social media" loading="lazy" decoding="async">
                 </div>
+
                 <!-- Proyecto 03 -->
-                <div class="card negro" style="width: 18rem;">
+                <div class="card negro" style="width: 18rem;" role="listitem">
                     <div class="card-body">
-                        <h5 class="card-title"><b>Shoopper</b></b></h5>
+                        <h5 class="card-title"><b>Shoopper</b></h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">Diseño UX/UI</h6>
                         <a href="#" class="card-link">Ver más</a>
                     </div>
-                    <img src="IMG/Shopper.jpg" alt="Proyectos diseños">
+                    <img src="IMG/Shopper.jpg" alt="Proyecto Shopper" loading="lazy" decoding="async">
                 </div>
+
                 <!-- Proyecto 04 -->
-                <div class="card negro" style="width: 18rem;">
+                <div class="card negro" style="width: 18rem;" role="listitem">
                     <div class="card-body">
-                        <h5 class="card-title"><b>mrbid.me</b></b></h5>
+                        <h5 class="card-title"><b>mrbid.me</b></h5>
                         <h6 class="card-subtitle mb-2 text-body-secondary">Diseño UI</h6>
                         <a href="#" class="card-link">Ver más</a>
                     </div>
-                    <img src="IMG/mrbid.me.jpg" alt="Proyectos social Social_media">
+                    <img src="IMG/mrbid.me.jpg" alt="Proyecto mrbid.me" loading="lazy" decoding="async">
                 </div>
             </div>
         </section>
+
+        <!-- Herramientas -->
         <section class="herramientas_seccion">
             <div class="herramientas">
-                <div class="herramientas_texto">
+                <div data-aos="fade-right" data-aos-duration="1500" class="herramientas_texto">
                     <p class="sub-title">Conoce mis</p>
                     <h2 class="proyectos__title">Herramientas de Diseño</h2>
                 </div>
@@ -133,9 +169,10 @@
                     <!-- información -->
                     <div class="lado_derecho barra_herramienta">
                         <!-- Herramienta 01 -->
-                        <div class="tarjeta_herramienta">
+                        <div data-aos="fade-left" data-aos-duration="1500" class="tarjeta_herramienta">
                             <div class="img_herramienta">
-                                <img src="IMG/Figma.webp" alt="Figma logo">
+                                <img src="IMG/Figma.webp" alt="Figma" width="56" height="56" loading="lazy"
+                                    decoding="async">
                             </div>
                             <div class="info_herramienta">
                                 <p class="nombre">Figma</p>
@@ -144,9 +181,10 @@
                         </div>
 
                         <!-- Herramienta 02 -->
-                        <div class="tarjeta_herramienta">
+                        <div data-aos="fade-left" data-aos-duration="1500" class="tarjeta_herramienta">
                             <div class="img_herramienta">
-                                <img src="IMG/PSD.png" alt="Photoshop logo">
+                                <img src="IMG/PSD.png" alt="Photoshop" width="56" height="56" loading="lazy"
+                                    decoding="async">
                             </div>
                             <div class="info_herramienta">
                                 <p class="nombre">Photoshop</p>
@@ -155,76 +193,90 @@
                         </div>
 
                         <!-- Herramienta 03 -->
-                        <div class="tarjeta_herramienta">
+                        <div data-aos="fade-left" data-aos-duration="1500" class="tarjeta_herramienta">
                             <div class="img_herramienta">
-                                <img src="IMG/AI.png" alt="Illustrator logo">
+                                <img src="IMG/AI.png" alt="Illustrator" width="56" height="56" loading="lazy"
+                                    decoding="async">
                             </div>
                             <div class="info_herramienta">
                                 <p class="nombre">Illustrator</p>
                                 <p class="descripcion">Vectores e ilustración</p>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </section>
-        <section class="experiencia">
+
+        <!-- Experiencia -->
+        <section data-aos="zoom-out-up" data-aos-duration="1500" class="experiencia">
             <div class="contenedor backct">
-                <h2 class="sub-title">Trayecto laboral</h2>
-                <h2 class="titulo-exp">Mi experiencia</h2>
-
-                <ul class="lista-exp">
-                    <li class="exp-item">
-                        <div class="exp-info">
-                            <h3 class="exp-puesto">Diseñador gráfico</h3>
-                            <p class="exp-empresa">Grupo Dashin</p>
-                        </div>
-                        <span class="exp-periodo">Jun 21 – Dic 21</span>
-                    </li>
-
-                    <li class="exp-item">
-                        <div class="exp-info">
-                            <h3 class="exp-puesto">Diseñador gráfico</h3>
-                            <p class="exp-empresa">BuscaHogares</p>
-                        </div>
-                        <span class="exp-periodo">Dic 21 – Mar 2023</span>
-                    </li>
-
-                    <li class="exp-item">
-                        <div class="exp-info">
-                            <h3 class="exp-puesto">Diseñador Digital</h3>
-                            <p class="exp-empresa">marinero.mx</p>
-                        </div>
-                        <span class="exp-periodo">Mar 23 – Feb 25</span>
-                    </li>
-
-                    <li class="exp-item">
-                        <div class="exp-info">
-                            <h3 class="exp-puesto">Diseñador UX UI/Digital</h3>
-                            <p class="exp-empresa">Independiente</p>
-                        </div>
-                        <span class="exp-periodo">2022 – Presente</span>
-                    </li>
-
-                    <li class="exp-item">
-                        <div class="exp-info">
-                            <h3 class="exp-puesto">Diseñador UX UI</h3>
-                            <p class="exp-empresa">HoperCat</p>
-                        </div>
-                        <span class="exp-periodo">Abr 25 – Presente</span>
-                    </li>
-                </ul>
+                <div style="flex:1 1 100%; width:100%;">
+                    <div class="text_exp">
+                        <p class="sub-title">Trayecto laboral</p>
+                        <h2 class="titulo-exp">Mi experiencia</h2>
+                    </div>
+                    <div>
+                        <ul class="lista-exp">
+                            <li class="exp-item">
+                                <div class="exp-info">
+                                    <h3 class="exp-puesto">Diseñador gráfico</h3>
+                                    <p class="exp-empresa">Grupo Dashin</p>
+                                </div>
+                                <span class="exp-periodo">Jun 21 – Dic 21</span>
+                            </li>
+                            <li class="exp-item">
+                                <div class="exp-info">
+                                    <h3 class="exp-puesto">Diseñador gráfico</h3>
+                                    <p class="exp-empresa">BuscaHogares</p>
+                                </div>
+                                <span class="exp-periodo">Dic 21 – Mar 2023</span>
+                            </li>
+                            <li class="exp-item">
+                                <div class="exp-info">
+                                    <h3 class="exp-puesto">Diseñador Digital</h3>
+                                    <p class="exp-empresa">marinero.mx</p>
+                                </div>
+                                <span class="exp-periodo">Mar 23 – Feb 25</span>
+                            </li>
+                            <li class="exp-item">
+                                <div class="exp-info">
+                                    <h3 class="exp-puesto">Diseñador UX UI/Digital</h3>
+                                    <p class="exp-empresa">Independiente</p>
+                                </div>
+                                <span class="exp-periodo">2022 – Presente</span>
+                            </li>
+                            <li class="exp-item">
+                                <div class="exp-info">
+                                    <h3 class="exp-puesto">Diseñador UX UI</h3>
+                                    <p class="exp-empresa">HoperCat</p>
+                                </div>
+                                <span class="exp-periodo">Abr 25 – Presente</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
+
+
+
     </main>
+
     <footer>
         <p>© 2025 Todos los derechos reservados | Desarrollado por Daniel Bolio</p>
     </footer>
-    <!--JV BS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+
+    <!-- JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
 </body>
 
 </html>

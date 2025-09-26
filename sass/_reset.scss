@@ -1,0 +1,18 @@
+@use "variables" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: $font-main;
+  color: $color-text;
+  background: $white;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
