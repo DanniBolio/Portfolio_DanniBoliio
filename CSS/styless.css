@@ -280,6 +280,7 @@ footer {
 .card.negro {
   color: #ffffff;
   background-color: #1a1a1a;
+  border-color: #ffffff;
 }
 .card .card-subtitle {
   color: #e5e7eb !important;
