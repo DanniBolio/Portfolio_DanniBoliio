@@ -22,3 +22,19 @@
     margin: 0 20px;
   }
 }
+
+@media (min-width: ($bp + 1)) and (max-width: 1024px) {
+  .about_me {
+    margin: 0 20px;
+
+    .contenedor > div {
+      flex: 1 1 48%;
+    }
+
+    .contacto_foto {
+      width: 300px;
+      height: 300px;
+      margin-top: 40px;
+    }
+  }
+}

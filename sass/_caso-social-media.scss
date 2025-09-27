@@ -73,3 +73,42 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (min-width: ($bp + 1)) and (max-width: 1024px) {
+  .case {
+    padding: 50px 20px 90px;
+
+    &-title {
+      font-size: clamp(26px, 3.6vw, 44px);
+    }
+
+    &-cover {
+      border-radius: 16px;
+      padding: clamp(12px, 1.6vw, 18px);
+
+      img { border-radius: 10px; }
+    }
+
+    &-section {
+      max-width: 880px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .case-h2 {
+        font-size: clamp(20px, 2.2vw, 28px);
+      }
+    }
+  }
+
+  .case-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(14px, 2vw, 20px);
+
+    .case-shot {
+      border-radius: 14px;
+      padding: clamp(10px, 1.4vw, 14px);
+
+      img { border-radius: 8px; }
+    }
+  }
+}

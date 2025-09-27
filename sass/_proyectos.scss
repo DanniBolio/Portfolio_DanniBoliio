@@ -70,7 +70,7 @@
     border-color:$white;
   }
   .card-subtitle {
-    color: $gray !important;
+    color: $color-text !important;
     margin-top: 5px;
   }
   .card-body {
@@ -105,5 +105,48 @@
     background: $color-primary;
     border-color: $color-primary;
     color: $color-text;
+  }
+}
+
+@media (min-width: ($bp + 1)) and (max-width: 1024px) {
+  .proyectos {
+    padding: 72px 60px;
+    border-radius: 42px;
+    margin-inline: auto;
+
+    &__inner {
+      gap: 20px;
+    }
+
+    &__title {
+      font-size: clamp(22px, 2.2vw, 28px);
+    }
+
+    .sub-title {
+      font-size: clamp(14px, 1.6vw, 16px);
+    }
+  }
+
+  .proyectos_boxc {
+    gap: 28px;
+    justify-content: space-between;
+    margin: 48px auto;
+  }
+
+  .card {
+    flex: 1 1 48%;
+    padding: 24px;
+    border-radius: 24px;
+
+    img { border-radius: 16px; }
+
+    .card-subtitle {
+      margin-top: 4px;
+    }
+  }
+
+  .card-link {
+    font-size: 14px;
+    padding: 10px 22px;
   }
 }

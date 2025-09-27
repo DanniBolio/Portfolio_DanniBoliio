@@ -75,3 +75,40 @@
   width: auto !important;
   min-width: 0;
 }
+
+@media (min-width: ($bp + 1)) and (max-width: 1024px) {
+  .contenedor_herramientas {
+    max-width: 1000px; /* un poco más compacto que desktop */
+    gap: 20px;
+  }
+
+  .herramientas {
+    max-width: 1000px;
+    gap: 24px;
+    padding: 40px 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tarjeta_herramienta {
+    border-radius: 10px;
+    padding: 18px 40px;
+    gap: 14px;
+    box-shadow: 0 6px 14px rgba($color-text, .06);
+
+    .img_herramienta {
+      width: 52px;
+      height: 52px;
+
+      img { border-radius: 50%; }
+    }
+
+    .info_herramienta {
+      .nombre { font-weight: 700; }
+      .descripcion { font-size: 14px; line-height: 1.4; }
+    }
+  }
+
+  .herramientas_texto {
+    text-align: left;
+  }
+}

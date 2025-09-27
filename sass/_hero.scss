@@ -39,3 +39,25 @@
     margin: 0 20px;
   }
 }
+
+@media (min-width: ($bp + 1)) and (max-width: 1024px) {
+  .hero {
+    padding: 56px 0;
+
+    .contenedor {
+      padding: clamp(56px, 5vw, 80px);
+      border-radius: 42px;
+      text-align: left !important;
+      gap: clamp(16px, 3.2vw, 40px);
+    }
+
+    .card_me {
+      gap: 10px;
+    }
+
+    .hero-titulo {
+      font-size: clamp(32px, 4vw, 48px);
+      margin-bottom: 24px;
+    }
+  }
+}
