@@ -26,6 +26,9 @@
   @media (max-width: $bp-md) {
     grid-template-columns: 1fr;
   }
+  .sub-title{
+    color: $color-primary-dark;
+  }
 }
 
 .tarjeta_herramienta {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -89,7 +90,7 @@ main {
 
 footer {
   background: #1a1a1a;
-  color: #e5e7eb;
+  color: #ffffff;
   text-align: center;
   padding: 20px 0;
   font-size: 14px;
@@ -188,6 +189,24 @@ footer {
   }
 }
 
+@media (min-width: 781px) and (max-width: 1024px) {
+  .hero {
+    padding: 56px 0;
+  }
+  .hero .contenedor {
+    padding: clamp(56px, 5vw, 80px);
+    border-radius: 42px;
+    text-align: left !important;
+    gap: clamp(16px, 3.2vw, 40px);
+  }
+  .hero .card_me {
+    gap: 10px;
+  }
+  .hero .hero-titulo {
+    font-size: clamp(32px, 4vw, 48px);
+    margin-bottom: 24px;
+  }
+}
 .about_me {
   max-width: 1200px;
   margin-inline: auto;
@@ -202,6 +221,9 @@ footer {
   flex: 1 1 50%;
   min-width: 0;
 }
+.about_me .sub-title {
+  color: #4ea077;
+}
 @media (max-width: 780px) {
   .about_me .contenedor > div {
     flex-basis: 100%;
@@ -211,6 +233,19 @@ footer {
   }
 }
 
+@media (min-width: 781px) and (max-width: 1024px) {
+  .about_me {
+    margin: 0 20px;
+  }
+  .about_me .contenedor > div {
+    flex: 1 1 48%;
+  }
+  .about_me .contacto_foto {
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+  }
+}
 .proyectos {
   max-width: 1200px;
   margin-inline: auto;
@@ -283,7 +318,7 @@ footer {
   border-color: #ffffff;
 }
 .card .card-subtitle {
-  color: #e5e7eb !important;
+  color: #e7e7e7 !important;
   margin-top: 5px;
 }
 .card .card-body {
@@ -318,6 +353,42 @@ footer {
   color: #1a1a1a;
 }
 
+@media (min-width: 781px) and (max-width: 1024px) {
+  .proyectos {
+    padding: 72px 60px;
+    border-radius: 42px;
+    margin-inline: auto;
+  }
+  .proyectos__inner {
+    gap: 20px;
+  }
+  .proyectos__title {
+    font-size: clamp(22px, 2.2vw, 28px);
+  }
+  .proyectos .sub-title {
+    font-size: clamp(14px, 1.6vw, 16px);
+  }
+  .proyectos_boxc {
+    gap: 28px;
+    justify-content: space-between;
+    margin: 48px auto;
+  }
+  .card {
+    flex: 1 1 48%;
+    padding: 24px;
+    border-radius: 24px;
+  }
+  .card img {
+    border-radius: 16px;
+  }
+  .card .card-subtitle {
+    margin-top: 4px;
+  }
+  .card-link {
+    font-size: 14px;
+    padding: 10px 22px;
+  }
+}
 .contenedor_herramientas {
   max-width: 1100px;
   margin: 0 auto;
@@ -347,13 +418,16 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.herramientas .sub-title {
+  color: #4ea077;
+}
 
 .tarjeta_herramienta {
   display: flex;
   align-items: center;
   gap: 16px;
   background: #ffffff;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #797979;
   border-radius: 12px;
   width: 100%;
   padding: 20px 50px;
@@ -384,7 +458,7 @@ footer {
   margin: 0;
   font-size: 14px;
   line-height: 1.35;
-  color: #e5e7eb;
+  color: #797979;
 }
 
 .herramientas_texto {
@@ -394,6 +468,41 @@ footer {
   min-width: 0;
 }
 
+@media (min-width: 781px) and (max-width: 1024px) {
+  .contenedor_herramientas {
+    max-width: 1000px; /* un poco más compacto que desktop */
+    gap: 20px;
+  }
+  .herramientas {
+    max-width: 1000px;
+    gap: 24px;
+    padding: 40px 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .tarjeta_herramienta {
+    border-radius: 10px;
+    padding: 18px 40px;
+    gap: 14px;
+    box-shadow: 0 6px 14px rgba(26, 26, 26, 0.06);
+  }
+  .tarjeta_herramienta .img_herramienta {
+    width: 52px;
+    height: 52px;
+  }
+  .tarjeta_herramienta .img_herramienta img {
+    border-radius: 50%;
+  }
+  .tarjeta_herramienta .info_herramienta .nombre {
+    font-weight: 700;
+  }
+  .tarjeta_herramienta .info_herramienta .descripcion {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .herramientas_texto {
+    text-align: left;
+  }
+}
 .experiencia {
   max-width: 1200px;
   margin-inline: auto;
@@ -427,6 +536,9 @@ footer {
   line-height: 1.05;
   font-size: 2vh;
 }
+.experiencia .sub-title {
+  color: #4ea077;
+}
 .experiencia .lista-exp {
   list-style: none;
   margin: 0;
@@ -438,7 +550,7 @@ footer {
   align-items: flex-start;
   gap: 16px;
   padding: 18px 0;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid #797979;
 }
 .experiencia .exp-item .exp-puesto {
   margin: 0 0 4px;
@@ -448,10 +560,10 @@ footer {
 .experiencia .exp-item .exp-empresa {
   margin: 0;
   text-align: start;
-  color: #e5e7eb;
+  color: #797979;
 }
 .experiencia .exp-item .exp-periodo {
-  color: #e5e7eb;
+  color: #797979;
   white-space: nowrap;
 }
 @media (max-width: 640px) {
@@ -470,6 +582,35 @@ footer {
   }
 }
 
+@media (min-width: 781px) and (max-width: 1024px) {
+  .experiencia {
+    margin: 0 20px;
+  }
+  .experiencia .contenedor {
+    padding: clamp(24px, 4vw, 56px);
+    border-radius: 42px;
+    gap: clamp(16px, 3.2vw, 36px);
+  }
+  .experiencia .titulo-exp {
+    font-size: clamp(22px, 2.2vw, 28px);
+    margin-bottom: 24px;
+  }
+  .experiencia .exp-item {
+    align-items: center;
+    gap: 12px;
+    padding: 16px 0;
+  }
+  .experiencia .exp-puesto {
+    font-size: 18px;
+  }
+  .experiencia .exp-empresa {
+    font-size: 14px;
+  }
+  .experiencia .exp-periodo {
+    white-space: nowrap;
+    font-size: 14px;
+  }
+}
 .contacto {
   padding: 100px 20px;
   font-family: Arial, sans-serif;
@@ -489,6 +630,9 @@ footer {
 .contacto_correo, .contacto_telefono {
   font-weight: bold;
   margin-bottom: 10px;
+}
+.contacto .sub-title {
+  color: #4ea077;
 }
 .contacto .btn_contacto {
   background: limegreen;
@@ -555,7 +699,7 @@ footer {
   font-size: clamp(28px, 4.2vw, 54px);
 }
 .case-cover {
-  background: #e5e7eb;
+  background: #797979;
   border-radius: 20px;
   padding: clamp(12px, 1.8vw, 20px);
   overflow: hidden;
@@ -586,7 +730,7 @@ footer {
   margin-top: 24px;
 }
 .case-gallery .case-shot {
-  background: #e5e7eb;
+  background: #797979;
   border-radius: 16px;
   padding: clamp(10px, 1.6vw, 16px);
 }
@@ -606,6 +750,40 @@ footer {
   }
   .case-gallery {
     grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 781px) and (max-width: 1024px) {
+  .case {
+    padding: 50px 20px 90px;
+  }
+  .case-title {
+    font-size: clamp(26px, 3.6vw, 44px);
+  }
+  .case-cover {
+    border-radius: 16px;
+    padding: clamp(12px, 1.6vw, 18px);
+  }
+  .case-cover img {
+    border-radius: 10px;
+  }
+  .case-section {
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .case-section .case-h2 {
+    font-size: clamp(20px, 2.2vw, 28px);
+  }
+  .case-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(14px, 2vw, 20px);
+  }
+  .case-gallery .case-shot {
+    border-radius: 14px;
+    padding: clamp(10px, 1.4vw, 14px);
+  }
+  .case-gallery .case-shot img {
+    border-radius: 8px;
   }
 }
 
